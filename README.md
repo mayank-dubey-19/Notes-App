@@ -22,7 +22,7 @@ This project was created to practice **DOM manipulation, JavaScript events, Loca
 
 click on the link to preview this repo :  https://mayank-dubey-19.github.io/Notes-App/
 
-📸 Screenshots
+📸 <h1> Screenshots </h1>
 
 <img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/43a4e82b-9a1f-4a3c-bf00-6df49d05813d" />
 
