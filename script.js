@@ -57,6 +57,7 @@ function createNote(tittle, content) {
         selecteddiv = this ;
         titleInput.value = this.dataset.title;
         textarea.value = this.dataset.content;
+        titleInput.focus();
 
     });
     
@@ -67,7 +68,6 @@ Add.addEventListener("click", function () {
 
     titleInput.value = "";
     textarea.value = "";
-
     titleInput.focus();
 
 });
@@ -140,7 +140,6 @@ document.querySelector(".all-notes-btn").addEventListener("click",function(){
 });
 
 let searchtittle = document.querySelector(".searchbar-input");
-
 
 searchtittle.addEventListener("input",function(){
     
