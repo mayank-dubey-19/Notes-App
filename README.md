@@ -1,6 +1,6 @@
 # 📝 Notes App
 
-A simple and user-friendly **Notes App** built using **HTML, CSS, and JavaScript**. It allows users to create, search, edit, and delete notes easily through a clean and responsive interface.
+A simple and user-friendly **Notes App** built using **HTML, CSS, and JavaScript**. It allows users to create, search, edit, and delete notes easily through a clean and responsive interface. This notes app also have the feature of local storage.
 
 ### ✨ Features
 
