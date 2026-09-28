@@ -1,11 +1,9 @@
 .header{
     display: flex; 
     height: 25px; 
-    width: 980px; 
-    border-radius: 12px; 
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4); 
-    padding: 25px; 
-    margin-bottom: 20px;
+    width: 1020px;  
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 .title{
     width: 200px; 
@@ -17,7 +15,7 @@
     width: 280px; 
     height: 35px; 
     outline: none; 
-    border: 1px solid #d1d5db; 
+    border: 1px solid #a49f9f; 
     padding: 0 30px;
 }
 .notes-title-input:focus{
@@ -28,7 +26,7 @@
     height: 30px; 
     width: 230px; 
     padding: 0 10px; 
-    border: 1px solid #d1d5db; 
+    border: 1px solid #a49f9f; 
     border-radius: 10px; 
     outline: none; 
     
@@ -37,8 +35,8 @@
     border-color: #6799f7;
     box-shadow: 0 0 8px rgba(93, 148, 249, 0.4);
 }
-#funtion-btn{
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4); 
+    #funtion-btn{
+        border: 1px solid #a49f9f;
     border-radius: 5px; 
     width: 35px; 
     height: 35px; 
@@ -56,13 +54,13 @@
 }
 .notes-add-btn{
     height: 25px; 
-    width: 180px; 
+    width: 175px; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
     padding: 10px; 
     border-radius: 10px; 
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4); 
+    border: 0.5px solid #a49f9f;
     font-size: 18px; 
     background: linear-gradient(135deg,#d9e2f3,#b4c7ef , #dfe5f2);
     transition: 0.25s ease;
@@ -71,15 +69,16 @@
     margin-top: 10px; 
     background: #ebecee; 
     height: 16px; 
-    width: 180px; 
+    width: 175px; 
     display: flex; 
     justify-content: start; 
     align-items: center; 
     padding: 10px; 
     border-radius: 10px; 
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4); 
+    border:#a49f9f 0.5px solid;
     font-size: 13px;
     transition: 0.25s ease;
+    margin-bottom: 10px;
 }
 .btn:hover{
     transform:translateY(-1px) scale(1.03);
@@ -91,29 +90,16 @@
 .notes-counter{
     margin-left: 10px; 
     margin-top: 20px; 
-    width: 200px; 
-    height:300px; 
+    width: 200px;  
     display: flex; 
     flex-direction: row; 
     align-items: end; 
     font-size: 16px;
 }
-.m_s-tittle{
-    background: #ebecee; 
-    height: 16px; 
-    width: 180px; 
-    display: flex; 
-    justify-content: start; 
-    align-items: center; 
-    padding: 10px; 
-    border-radius: 10px; 
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4); 
-    font-size: 15px;
-}
 textarea{
-    width:430px; 
-    height: 400px ; 
-    border: 1px solid #ddd; 
+    width:760px; 
+    height: 450px ; 
+    border: 1px solid #a49f9f; 
     border-radius: 12px;  
     font-size: 16px; 
     padding: 20px; 
@@ -121,6 +107,7 @@ textarea{
     box-sizing: border-box; 
     overflow: auto; 
     font-family: sans-serif;
+    margin-right: 60px;
 }
 textarea::-webkit-scrollbar-track{
     background:transparent;
@@ -130,18 +117,14 @@ textarea::-webkit-scrollbar{
 }
 .div1-style{
     margin-top: 15px; 
-    width: 180px ; 
-    height: 100px; 
+    width: 177px ; 
+    height: 80px; 
     padding: 8px; 
     border-radius: 12px; 
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4);
-    transition: 0.25s ease;
-}
-.div1-style:hover{
-    transform: translateY(-1px)scale(1.001);
-}
-.div1-style:active{
-    transform: translateY(0)scale(0.99);
+    border:0.5px;
+    border-style: solid;
+    border-color: #a49f9f;
+    
 }
 .div3-style{
     margin-top: 10px; 
@@ -151,11 +134,8 @@ textarea::-webkit-scrollbar{
     font-size: 13px;
 }
 .middle-sidebar{
-    width: 200px; 
-    height: 400px; 
-    padding:25px;  
-    border-radius: 12px; 
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.4); 
+    width:auto;
+    height: 250px;  
     overflow: auto;
 }
 .middle-sidebar::-webkit-scrollbar-track{
