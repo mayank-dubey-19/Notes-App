@@ -55,6 +55,12 @@ function createNote(tittle, content) {
 
     div1.addEventListener("click", function () {
         selecteddiv = this ;
+        div1.style.border = "0.5px solid  #6799f7";
+        document.querySelectorAll(".div1-style").forEach(function (note) {
+            if (note !== selecteddiv) {
+                note.style.border = " 0.5px solid #a49f9f";
+            }
+        });
         titleInput.value = this.dataset.title;
         textarea.value = this.dataset.content;
         titleInput.focus();
@@ -72,9 +78,7 @@ Add.addEventListener("click", function () {
 
 });
 
-
-save.addEventListener("click", function () {
-
+function addtask(){
     // Current title and content
 
     let tittle = titleInput.value.trim();
@@ -110,11 +114,17 @@ save.addEventListener("click", function () {
     document.querySelector(".notes-counter").innerHTML ="Total Notes : "+String(notes_number).padStart(2,0);
 
     saveNotesToLocalStorage();
-
+}
+save.addEventListener("click", function () {
+    addtask();
+});
+titleInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        addtask();
+    }
 });
 
-document.querySelector(".delete-btn").addEventListener("click",function(){
-
+function deleteSelectedNote() {
     if (selecteddiv !== null) {
         
         notes_number--;
@@ -126,7 +136,14 @@ document.querySelector(".delete-btn").addEventListener("click",function(){
         saveNotesToLocalStorage();
 
     }
-
+}
+document.querySelector(".delete-btn").addEventListener("click",function(){
+       deleteSelectedNote();
+});
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Delete") {
+        deleteSelectedNote();
+    }
 });
 
 document.querySelector(".all-notes-btn").addEventListener("click",function(){
