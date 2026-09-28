@@ -24,7 +24,8 @@ click on the link to preview this repo :  https://mayank-dubey-19.github.io/Note
 
  <h1> 📸 Screenshots </h1>
 
-<img width="1882" height="926" alt="image" src="https://github.com/user-attachments/assets/b80bce98-3839-46a4-91bd-b79f8d1f4a4a" />
+<img width="1762" height="880" alt="image" src="https://github.com/user-attachments/assets/01a8dd42-0b4d-44e0-8412-7a7baa2da5f4" />
+
 
 
 
